@@ -40,6 +40,14 @@ print(len(c)) #prints length of "c" (starting point of counting is 1)
 for i in range(len(c)):
     print(c[i]) #prints Ankit is a programmer
 
+#3 (reverse of string)--------
+n = "Ankit"
+a = ""
+for i in range(len(n)-1,-1,-1):
+    a = a + n[i]
+print(a)
+
+
 
 #--------------Break of loop-------------------
 

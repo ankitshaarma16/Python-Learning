@@ -85,4 +85,46 @@ b = 0
 for j in range(1,n+1,2):
      b = b + j
 print(f"The sum of odd number in your number range:{b}")
+
+# -----------11(string reverse)--------------
+n = "Ankit"
+a = ""
+for i in range(len(n)-1,-1,-1):
+    a = a + n[i]
+print(a)
+
+
+#----------------Pallindrome(same from both back to front and front to back) string or not-------------
+n = "NON"
+b = ""
+for i in range(len(n)-1,-1,-1):   
+    b = b + n[i]
+if b == n:
+    print("The string is pallindorme.....")
+else:
+    print("The string is not pallindrome.......")    
+
+
+#-----------------count special , aphabate, and numbers from the -----------------
+
+a = "ksbafd232aw2w#$%^*()12"
+
+alpha = 0
+num = 0
+sp = 0
+
+for i in a:
+    if i.isalpha():
+        alpha = alpha + 1
+
+    elif i.isdigit():
+        num = num + 1
+
+    else:
+        sp = sp + 1
+
+print(f"The alphabets: {alpha}")
+print(f"The digits: {num}")
+print(f"The special characters: {sp}")
+
 """
